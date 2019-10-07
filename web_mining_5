@@ -49,7 +49,7 @@ for s1 in d.sents:
         if len(str(s1.text).split()) > 9 and len(str(s2.text).split()) > 9:
                 list.append(s1.text)
                 list.append(s2.text)
-                #list.append(s1.similarity(s2))
+                list.append(s1.similarity(s2))
             
 list.sort(key= lambda x:x[2])
 print(list)
